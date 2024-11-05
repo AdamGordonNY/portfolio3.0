@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 // import { Inter_Tight } from "next/font/google";
 import "./globals.css";
 import React from "react";
+import ActiveSectionContextProvider from "@/context/ActiveSectionContext";
+import ThemeContextProvider from "@/context/ThemeContext";
 const satoshi = localFont({
   src: "./fonts/satoshi.ttf",
   variable: "--font-satoshi",
@@ -34,11 +36,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${satoshi.variable} ${satoshiBold.variable} ${satoshiItalic.variable} bg-black-200 antialiased`}
-      >
-        {children}
-      </body>
+      <ActiveSectionContextProvider>
+        <ThemeContextProvider>
+          <body
+            className={`${satoshi.variable} ${satoshiBold.variable} ${satoshiItalic.variable} relative z-0 bg-gray-50  pt-28 text-gray-950 antialiased dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 sm:pt-36`}
+          >
+            {/* Background Layer */}
+            <div
+              className="fixed inset-0 -z-10 bg-landing-pattern bg-cover bg-no-repeat opacity-25"
+              aria-hidden="true"
+            ></div>{" "}
+            <div className="relative z-10">{children}</div>
+          </body>
+        </ThemeContextProvider>
+      </ActiveSectionContextProvider>
     </html>
   );
 }
