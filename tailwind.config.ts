@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        "landing-pattern": "url('/backdrop.svg')",
+      },
       colors: {
         blue: {
           100: "#5EAFFF",
@@ -25,6 +28,12 @@ const config = {
         offwhite: {
           100: "#DDE4FF",
           200: "#E5E5E5",
+          500: "#6F74A7",
+        },
+        black: {
+          200: "#151E2C",
+          300: "#192333",
+          400: "#778295",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
