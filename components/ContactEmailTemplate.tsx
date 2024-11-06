@@ -25,7 +25,7 @@ export const ContactFormEmail = ({
       <Head />
       <Preview>New message from {`${senderEmail}`}e</Preview>
       <Tailwind>
-        <Body className="bg-gray-100 text-black">
+        <Body className="text-black bg-gray-100">
           <Container>
             <Section className="borderBlack my-10 rounded-md bg-white px-10 py-4">
               <Heading className="leading-tight">

@@ -74,28 +74,28 @@ export default function Intro() {
           <BsArrowRight className="opacity-70" />
         </Link>
 
-        <a
+        <Link
           className="border-black/10 group flex cursor-pointer items-center gap-2 rounded-full border bg-white p-4 text-gray-700 outline-none
         transition hover:scale-[1.15] hover:text-gray-950  focus:scale-[1.15] active:scale-105 "
           href="/resume.pdf"
         >
           Download CV{" "}
           <BsDownload className="group-hover:trahslate-x-1 opacity-60 transition" />
-        </a>
-        <a
+        </Link>
+        <Link
           className="border-black/10 flex cursor-pointer items-center gap-2 rounded-full border bg-white p-4 text-gray-700
         transition hover:scale-[1.15] hover:text-gray-950  focus:scale-[1.15] active:scale-105"
           href="https://www.linkedin.com/in/adam-gordon119/"
         >
           <BsLinkedin />
-        </a>
-        <a
+        </Link>
+        <Link
           className="border-black/10 flex cursor-pointer items-center gap-2 rounded-full border bg-white  p-4 text-[1.35rem] text-gray-700
         transition hover:scale-[1.15] hover:text-gray-950  focus:scale-[1.15] active:scale-105"
           href="https://github.com/adamgordonny"
         >
           <FaGithubSquare />
-        </a>
+        </Link>
       </motion.div>
     </section>
   );
