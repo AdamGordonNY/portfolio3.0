@@ -46,17 +46,18 @@ export default function Intro() {
         </div>
       </div>
       <motion.p
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-normal sm:text-4xl"
+        className=" mb-10 mt-4 px-4 text-center text-2xl font-medium !leading-normal sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         Hi, I&apos;m <span className="font-bold"> Adam Gordon. </span>I&apos;m a
         <span className="font-bold"> Software Engineer </span>based in the
-        <span className="font-bold"> NYC Area. </span>
-        My most used technologies are
-        <span className="font-bold"> NextJS 13, Vue or React</span>
-        (with and without Typescript), and the
-        <span className="font-bold"> Laravel framework.</span>
+        <span className="font-bold"> NYC Area. </span>I like to build Full Stack
+        projects in current and flexible technologies like
+        <span className=" font-bold ">
+          {" "}
+          NextJS (TSX) - .NET Core (C#) - Laravel (PHP) - Vue/NuxtJS (TSX).
+        </span>
       </motion.p>
       <motion.div
         className="flex flex-col items-center justify-center gap-2  px-4 text-lg font-medium sm:flex-row"

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import SectionHeader from "./Sectionheader";
+import SectionHeader from "./SectionHeader";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/lib/actions/actions";
@@ -42,6 +42,7 @@ export default function Contact() {
       <form
         className="dark:text-black mt-10 flex flex-col"
         action={async (formData) => {
+          // eslint-disable-next-line no-unused-vars
           const { data, error } = await sendEmail(formData);
 
           if (error) {
@@ -61,7 +62,7 @@ export default function Contact() {
           placeholder="Your email"
         />
         <textarea
-          className="borderBlack my-3 h-52 rounded-lg p-4 transition-all dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100"
+          className="borderBlack dark:bg-opacity-80/80 dark:focus:bg-opacity-100/100 my-3 h-52 rounded-lg p-4 transition-all dark:bg-white dark:outline-none"
           name="message"
           placeholder="Your message"
           required

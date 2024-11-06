@@ -38,3 +38,6 @@
 .small-bold {
   @apply font-bold text-[14px] leading-[1.45];
 }
+.borderBlack {
+  @apply border border-black/10;
+}
