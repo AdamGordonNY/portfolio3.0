@@ -117,6 +117,30 @@ export const links = [
   },
 ] as const;
 
+export const skillsData = [
+  "HTML",
+  "TailwindCSS",
+  "Framer Motion",
+  "JavaScript/TypeScript",
+  "React18/Vue3.0",
+  "Next.js/Nuxt.js",
+  "Node.js",
+  "Redux",
+  "VCS/Git",
+  "PostgreSQL / MYSQL",
+  "MongoDB",
+  "Laravel",
+  "Inertia.js",
+  "PHP",
+  "Docker",
+  "Google Firebase",
+  "Android Development w/ Java",
+  "Java 16",
+  ".NET Core",
+  "Python",
+  "Restful API development",
+  "Amazon S3",
+] as const;
 export const projectsData = [
   {
     title: "DevToday - Social Media Made For Developers, Made By Developers",
@@ -153,31 +177,6 @@ export const projectsData = [
     siteURL: "https://gitnote.adam-gordon.info",
     githubUrl: "https://github.com/AdamGordonNY/git_note",
   },
-] as const;
-
-export const skillsData = [
-  "HTML",
-  "TailwindCSS",
-  "Framer Motion",
-  "JavaScript/TypeScript",
-  "React18/Vue3.0",
-  "Next.js/Nuxt.js",
-  "Node.js",
-  "Redux",
-  "VCS/Git",
-  "PostgreSQL / MYSQL",
-  "MongoDB",
-  "Laravel",
-  "Inertia.js",
-  "PHP",
-  "Docker",
-  "Google Firebase",
-  "Android Development w/ Java",
-  "Java 16",
-  ".NET Core",
-  "Python",
-  "Restful API development",
-  "Amazon S3",
 ] as const;
 export const certs = [
   {
