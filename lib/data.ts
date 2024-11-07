@@ -1,12 +1,73 @@
+import { FaReact, FaLaravel, FaVuejs } from "react-icons/fa";
+import { BsPersonWorkspace, BsBriefcase } from "react-icons/bs";
 import React from "react";
-import {
-  IconBrandReact,
-  IconSchool,
-  IconBrandLaravel,
-  IconBrandVue,
-  IconBriefcase,
-  IconBrandNextjs,
-} from "@tabler/icons-react";
+
+export const experiencesData = [
+  {
+    title: "DevToday - JavaScript Mastery",
+    location: "Remote",
+    description:
+      "Second project of a 2-part series with JavaScript Mastery, building a social media platform for developers, using NextJS, TailwindCSS, and Prisma-ORM.",
+    icon: React.createElement(FaReact),
+    date: "2024",
+  },
+  {
+    title: "GitNote - Javascript Mastery",
+    location: "Online",
+    description:
+      "Part one of a two-part series with JavaScript Mastery, building a note-taking platform for developers, using NextJS, TailwindCSS, and Prisma-ORM.",
+    icon: React.createElement(FaReact),
+    date: "2024",
+  },
+  {
+    title: "NextJS 14 Pro Mastery Certified - JavaScript Mastery",
+    location: "Online",
+    description:
+      "Certified in NextJS 14 Pro Mastery by JavaScript Mastery with DevOverflow Project.",
+    icon: React.createElement(FaReact),
+    date: "2023",
+  },
+  {
+    title: "Freelance Web Developer",
+    location: "Long Island, NY",
+    description:
+      "Creating Projects both for myself and for clients, using React (with TS), Next.js, Laravel/InertiaJS (with Vue3 as a UI), and Tailwind CSS.",
+    icon: React.createElement(FaLaravel),
+    date: "December 2022-Present",
+  },
+  {
+    title: "Lead Front-End Developer, MNC Consulting LLC (Internship)",
+    location: "Brooklyn, NY",
+    description:
+      "Learning React on my own, working with Google Firebase, built a Real Estate website as both the project manager and trainer of new interns.",
+    icon: React.createElement(FaReact),
+    date: "2022-2023 (12 months)",
+  },
+  {
+    title: "Full-Stack Developer",
+    location: "DIAM International, Melville, NY",
+    description:
+      "Inherited a Nuxt2 with Laravel API and MySQL database, and built on the work of my predecessor, adding new features and fixing bugs.",
+    icon: React.createElement(FaVuejs),
+    date: "July 2022-December 2022",
+  },
+  {
+    title: "B.S. in Computer Programming and Information Systems",
+    location: "SUNY Farmingdale, NY",
+    description:
+      "Graduated in 2022 with a 3.31 Cumulative GPA, 3.87 in my major. Returned as an adult student in 2019.",
+    icon: React.createElement(BsPersonWorkspace),
+    date: "2019-2022",
+  },
+  {
+    title: "Account Manager, Renewal By Andersen Long Island",
+    location: "Farmingdale, NY",
+    description:
+      "Starting from entry level, I worked my way up to Account Manager, acting as the last point of contact between our in-home customers and sales representatives. Frequently received awards for leading in various performance metrics.",
+    icon: React.createElement(BsBriefcase),
+    date: "2016-2018",
+  },
+];
 
 export const testimonials = [
   {
@@ -55,66 +116,16 @@ export const links = [
     hash: "#contact",
   },
 ] as const;
-export const experiencesData = [
-  {
-    title: "Javascript Mastery Masterclass",
-    location: "Remote",
-    description:
-      "Completed 500+ hours of training in NextJS w/ TypeScript, React, and TailwindCSS, in a professional setting.",
-    icon: React.createElement(IconBrandReact),
-    date: "2024",
-  },
-  {
-    title: "NextJS 14 Pro Mastery Certified - JavaScript Mastery",
-    location: "Online",
-    description:
-      "Certified in NextJS 14 Pro Mastery by JavaScript Mastery with DevOverflow Project",
-    icon: React.createElement(IconBrandNextjs),
-    date: "2023",
-  },
-  {
-    title: "Freelance Web Developer",
-    location: "Long Island, NY",
-    description:
-      "Creating Projects both for myself and for clients, using React(with TS), Next.js, Laravel/InertiaJS (using Vue3 as a UI) and Tailwind CSS.",
-    icon: React.createElement(IconBrandLaravel),
-    date: "December 2022-Present",
-  },
-  {
-    title: "Lead Front-End Developer, MNC Consulting LLC (Internship)",
-    location: "Brooklyn, NY",
-    description:
-      "Learning React on my own, working with Google Firebase, built a Real Estate website as both the project manager, and trainer of new interns.",
-    icon: React.createElement(IconBrandReact),
-    date: "2022-2023 (12 months)",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "DIAM International, Melville, NY",
-    description:
-      "Inherited a Nuxt2 w/ Laravel API and MySQL database, and built on the work of my predecessor, adding new features, and fixing bugs.",
-    icon: React.createElement(IconBrandVue),
-    date: "July 2022-December 2022",
-  },
-  {
-    title: "B.S. in Computer Proramming and Information Systems",
-    location: "SUNY Farmingdale, NY",
-    description:
-      "Graduated in in 2022 with a 3.31 Cumulative GPA, 3.87 in my major. Returned as an adult student in 2019.",
-    icon: React.createElement(IconSchool),
-    date: "2019-2022",
-  },
-  {
-    title: "Account Manager, Renewal By Andersen Long Island",
-    location: "Farmingdale, NY",
-    description:
-      "Starting from entry level, I worked my way up to Account Manager, where I was functioning as the last point of contact between our in home customers and our sales representatives who went out for consultations.  I frequently received awards for leading the office in various performance metrics.",
-    icon: React.createElement(IconBriefcase),
-    date: "2016-2018",
-  },
-] as const;
 
 export const projectsData = [
+  {
+    title: "DevToday - Social Media Made For Developers, Made By Developers",
+    description: "",
+    tags: [""],
+    imageUrl: "/images/devtoday.svg",
+    siteURL: "https://devtoday.adam-gordon.info",
+    githubUrl: "https://github.com/AdamGordonNY/DevTodayAdamsVersion",
+  },
   {
     title: "Dev Overflow - A Stack Overflow Clone enhanced with AI",
     description:
@@ -125,77 +136,22 @@ export const projectsData = [
       "Tailwind",
       "App Router",
       "TypeScript",
-      "Server Actions",
       "shadcn-ui",
       "MongoDB",
       "Webhooks",
-      "Nginx",
     ],
-    imageUrl: "/devoverflow.png",
+    imageUrl: "/images/devoverflow.svg",
     siteURL: "https://devoverflow.gordon-webdesign.com",
-    githubURL: "https://github.com/agordon123/devoverflow.git",
+    githubURL: "https://github.com/adamgordonny/devoverflow",
   },
   {
-    title: "Car Showcase",
+    title: "Git Note - A Developer's Best Friend",
     description:
-      "A Next 13 TypeScript Project, using the Imagin Studio API to display cars, and their details.",
-    tags: ["React", "Next.js", "Tailwind", "TypeScript", "Imagin Studio API"],
-    imageUrl: "/carshowcase.png",
-    siteURL: "https://car-showcase-theta-six.vercel.app/",
-    githubURL: "https://github.com/agordon123/carshowcase2",
-  },
-  {
-    title: "Threads Clone",
-    description: "A pared down version of the new hit social media site.",
-    tags: [
-      "React",
-      "Next.js",
-      "Tailwind",
-      "TypeScript",
-      "Shadcn-UI",
-      "Clerk JS",
-      "Mongo DB",
-    ],
-    imageUrl: "/threadsclone.png",
-    siteURL: "https://threadz-eosin.vercel.app/",
-    githubURL: "https://github.com/agordon123/threadz",
-  },
-  {
-    title: "Learning Management System",
-    description:
-      "NextJS 13 project, creating a Udemy like page for learning and creating courses ",
-    tags: [
-      "Next.JS",
-      "Prisma",
-      "PlanetScale",
-      "Tailwind",
-      "App Router",
-      "TypeScript",
-      "Server Actions",
-      "Zod Resolver",
-      "shadcn-ui",
-    ],
-    imageUrl: "/LearningManagementSystem.png",
-    siteURL: "https://lms-smokey-project.vercel.app",
-    githubURL: "https://github.com/agordon123/lms-project.git",
-  },
-  {
-    title: "Radical Flexibility Fund's payment processing site",
-    description:
-      "Using NextJS13, Supabase, Stripe, TailwindCSS, this site provides a way for the Radical Flexibility Fund to accept donations.",
-    tags: [
-      "Next.JS",
-      "Supabase",
-      "Stripe",
-      "Tailwind",
-      "App Router",
-      "TypeScript",
-      "Server Actions",
-      "shadcn-ui",
-    ],
-    imageUrl: "/radicalflexfund.png",
-    siteURL: "https://radicalflexfundnext.vercel.app",
-    githubURL: "https://github.com/agordon123/radicalflexfundnext.git",
+      "Personal note taking platform to keep track of problems and how to solve them",
+    tags: ["NextJS", "TailwindCSS", "TypeScript", "React", "MongoDB", "Git"],
+    imageUrl: "/images/gitnote.svg",
+    siteURL: "https://gitnote.adam-gordon.info",
+    githubURL: "https://github.com/AdamGordonNY/git_note",
   },
 ] as const;
 
@@ -204,11 +160,11 @@ export const skillsData = [
   "TailwindCSS",
   "Framer Motion",
   "JavaScript/TypeScript",
-  "React/Vue3.0",
+  "React18/Vue3.0",
   "Next.js/Nuxt.js",
   "Node.js",
   "Redux",
-  "Git",
+  "VCS/Git",
   "PostgreSQL / MYSQL",
   "MongoDB",
   "Laravel",
@@ -219,17 +175,15 @@ export const skillsData = [
   "Android Development w/ Java",
   "Java 16",
   ".NET Core",
-  "C#",
   "Python",
-  "REST API",
-  "VPS Configuration/Linux",
+  "Restful API development",
+  "Amazon S3",
 ] as const;
 export const certs = [
   {
     title: "NextJS 14 Pro Mastery Certified - JavaScript Mastery",
     issuer: "JavaScript Mastery",
-    image:
-      "https://my.certifyme.online/static/fileStore/img/926/10546/221644_badge_1200A2.png",
+    image: "/images/jsmcert.png",
   },
   {
     title: "Javascript Mastery Masterclass",
