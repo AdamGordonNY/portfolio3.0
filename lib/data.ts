@@ -142,7 +142,7 @@ export const projectsData = [
     ],
     imageUrl: "/images/devoverflow.svg",
     siteURL: "https://devoverflow.gordon-webdesign.com",
-    githubURL: "https://github.com/adamgordonny/devoverflow",
+    githubUrl: "https://github.com/adamgordonny/devoverflow",
   },
   {
     title: "Git Note - A Developer's Best Friend",
@@ -151,7 +151,7 @@ export const projectsData = [
     tags: ["NextJS", "TailwindCSS", "TypeScript", "React", "MongoDB", "Git"],
     imageUrl: "/images/gitnote.svg",
     siteURL: "https://gitnote.adam-gordon.info",
-    githubURL: "https://github.com/AdamGordonNY/git_note",
+    githubUrl: "https://github.com/AdamGordonNY/git_note",
   },
 ] as const;
 
