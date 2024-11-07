@@ -14,8 +14,8 @@ export default function Project({
   description,
   tags,
   imageUrl,
-  githubURL,
-  siteURL,
+  githubUrl,
+  siteUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -36,7 +36,7 @@ export default function Project({
     >
       <section className="border-black/5 relative max-w-2xl overflow-hidden rounded-lg border bg-gray-100 transition hover:bg-gray-200 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:h-80 sm:pr-8 sm:group-even:pl-8">
         <div className="flex h-full flex-col px-5 pb-7 pt-4 sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10 sm:group-even:ml-72">
-          <Link href={siteURL}>
+          <Link href={siteUrl}>
             <h3 className="text-2xl font-semibold hover:underline">{title}</h3>
           </Link>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
@@ -74,9 +74,9 @@ export default function Project({
         group-even:group-hover:rotate-2 sm:block"
         />
       </section>
-      <a href={githubURL}>
+      <Link href={githubUrl}>
         <FaGithubSquare />
-      </a>
+      </Link>
     </motion.div>
   );
 }

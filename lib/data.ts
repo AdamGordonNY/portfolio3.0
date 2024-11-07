@@ -147,7 +147,7 @@ export const projectsData = [
     description: "",
     tags: [""],
     imageUrl: "/images/devtoday.svg",
-    siteURL: "https://devtoday.adam-gordon.info",
+    siteUrl: "https://devtoday.adam-gordon.info",
     githubUrl: "https://github.com/AdamGordonNY/DevTodayAdamsVersion",
   },
   {
@@ -165,7 +165,7 @@ export const projectsData = [
       "Webhooks",
     ],
     imageUrl: "/images/devoverflow.svg",
-    siteURL: "https://devoverflow.gordon-webdesign.com",
+    siteUrl: "https://devoverflow.gordon-webdesign.com",
     githubUrl: "https://github.com/adamgordonny/devoverflow",
   },
   {
@@ -174,7 +174,7 @@ export const projectsData = [
       "Personal note taking platform to keep track of problems and how to solve them",
     tags: ["NextJS", "TailwindCSS", "TypeScript", "React", "MongoDB", "Git"],
     imageUrl: "/images/gitnote.svg",
-    siteURL: "https://gitnote.adam-gordon.info",
+    siteUrl: "https://gitnote.adam-gordon.info",
     githubUrl: "https://github.com/AdamGordonNY/git_note",
   },
 ] as const;
