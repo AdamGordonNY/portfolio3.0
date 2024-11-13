@@ -74,7 +74,7 @@ export default function Project({
         group-even:group-hover:rotate-2 sm:block"
         />
       </section>
-      <Link href={githubUrl}>
+      <Link href={githubUrl} aria-label={`${githubUrl}`}>
         <FaGithubSquare />
       </Link>
     </motion.div>
