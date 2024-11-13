@@ -12,10 +12,14 @@ export default function Home() {
     <div className="z-1 flex min-h-screen w-full flex-col items-center ">
       <Intro />
       <SectionDivider />
-      <About /> <SectionDivider />
-      <Projects /> <SectionDivider />
-      <Skills /> <SectionDivider />
+      <About />
+      <SectionDivider />
+      <Projects />
+      <SectionDivider />
+      <Skills />
+      <SectionDivider />
       <Experience />
+      <SectionDivider />
       <Contact />
     </div>
   );
