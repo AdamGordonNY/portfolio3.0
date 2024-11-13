@@ -66,7 +66,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        role="main"
         className={`${satoshi.variable} ${satoshiBold.variable} ${satoshiItalic.variable} relative z-0 bg-gray-50  pt-28 text-gray-950 antialiased dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 sm:pt-36`}
       >
         {" "}

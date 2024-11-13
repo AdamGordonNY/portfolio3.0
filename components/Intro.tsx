@@ -67,6 +67,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
+          aria-label="Email Me"
           className="0 group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white transition
           hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105 group-hover:translate-x-1"
         >
@@ -95,6 +96,7 @@ export default function Intro() {
           className="border-black/10 flex cursor-pointer items-center gap-2 rounded-full border bg-white  p-4 text-[1.35rem] text-gray-700
         transition hover:scale-[1.15] hover:text-gray-950  focus:scale-[1.15] active:scale-105"
           href="https://github.com/adamgordonny"
+          aria-label="GitHub"
         >
           <FaGithubSquare />
         </Link>
