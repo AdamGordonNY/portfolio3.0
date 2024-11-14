@@ -1,4 +1,5 @@
 import { FaReact, FaLaravel, FaVuejs } from "react-icons/fa";
+import { FaCode, FaBookJournalWhills } from "react-icons/fa6";
 import { BsPersonWorkspace, BsBriefcase } from "react-icons/bs";
 import React from "react";
 
@@ -8,7 +9,7 @@ export const experiencesData = [
     location: "Remote",
     description:
       "Second project of a 2-part series with JavaScript Mastery, building a social media platform for developers, using NextJS, TailwindCSS, and Prisma-ORM.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(FaCode),
     date: "2024",
   },
   {
@@ -16,7 +17,7 @@ export const experiencesData = [
     location: "Online",
     description:
       "Part one of a two-part series with JavaScript Mastery, building a note-taking platform for developers, using NextJS, TailwindCSS, and Prisma-ORM.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(FaBookJournalWhills),
     date: "2024",
   },
   {
@@ -121,31 +122,53 @@ export const skillsData = [
   "HTML",
   "TailwindCSS",
   "Framer Motion",
-  "JavaScript/TypeScript",
-  "React18/Vue3.0",
-  "Next.js/Nuxt.js",
-  "Node.js",
-  "Redux",
-  "VCS/Git",
-  "PostgreSQL / MYSQL",
+  "TypeScript",
+  "React",
+  "NextJS",
+  "NodeJS",
+  "NuxtJS",
+  "Agile",
+  "VCS",
+  "SQL DBMS",
   "MongoDB",
   "Laravel",
-  "Inertia.js",
   "PHP",
   "Docker",
-  "Google Firebase",
+  "Google Firebase/Firestore",
   "Android Development w/ Java",
   "Java 16",
   ".NET Core",
   "Python",
   "Restful API development",
-  "Amazon S3",
+  "AWS S3",
+  "Google Cloud",
+  "Azure",
+  "AI integration",
+  "Webhooks",
+  "CI/CD",
+  "Prisma ORM",
+  "Project Management",
+  "Growth Mindset",
+  "Problem Solving",
+  "Critical Thinking",
+  "Communication",
+  "Leadership",
+  "Open Mindedness",
 ] as const;
 export const projectsData = [
   {
     title: "DevToday - Social Media Made For Developers, Made By Developers",
     description: "",
-    tags: [""],
+    tags: [
+      "Next.JS",
+      "Tailwind",
+      "TypeScript",
+      "Framer Motion",
+      "Prisma ORM",
+      "Webhooks",
+      "ISR",
+      "PostgreSQL",
+    ],
     imageUrl: "/images/devtoday.svg",
     siteUrl: "https://devtoday.adam-gordon.info",
     githubUrl: "https://github.com/AdamGordonNY/DevTodayAdamsVersion",
@@ -165,7 +188,7 @@ export const projectsData = [
       "Webhooks",
     ],
     imageUrl: "/images/devoverflow.svg",
-    siteUrl: "https://devoverflow.gordon-webdesign.com",
+    siteUrl: "https://devoverflow.adam-gordon.info",
     githubUrl: "https://github.com/adamgordonny/devoverflow",
   },
   {
