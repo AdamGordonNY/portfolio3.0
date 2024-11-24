@@ -16,6 +16,7 @@ export default function Project({
   imageUrl,
   githubUrl,
   siteUrl,
+  caseStudyUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -53,14 +54,14 @@ export default function Project({
             ))}
           </ul>
         </div>
-
-        <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          width={600}
-          height={400}
-          className="absolute -right-40 top-8 hidden w-[28.25rem] rounded-t-lg shadow-2xl transition
+        <Link href={`${caseStudyUrl}`}>
+          <Image
+            src={imageUrl}
+            alt="Project I worked on"
+            quality={95}
+            width={600}
+            height={400}
+            className="absolute -right-40 top-8 hidden w-[28.25rem] rounded-t-lg shadow-2xl transition
         group-even:-left-40 
         group-even:right-[initial]
         group-hover:-translate-x-3
@@ -72,11 +73,13 @@ export default function Project({
         group-even:group-hover:translate-y-3
 
         group-even:group-hover:rotate-2 sm:block"
-        />
+          />
+        </Link>
       </section>
       <Link href={githubUrl} aria-label={`${githubUrl}`}>
-        <FaGithubSquare />
+        <FaGithubSquare size={24} />
       </Link>
+      <Link href={caseStudyUrl}>Case Study</Link>
     </motion.div>
   );
 }

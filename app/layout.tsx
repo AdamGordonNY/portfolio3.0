@@ -11,19 +11,19 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 const satoshi = localFont({
   src: "./fonts/satoshi.ttf",
-  variable: "--font-satoshi",
+  variable: "--satoshi",
   weight: "400",
 });
 
 const satoshiBold = localFont({
   src: "./fonts/satoshi-bold.ttf",
-  variable: "--font-satoshi-bold",
+  variable: "--satoshi-bold",
   weight: "700",
 });
 
 const satoshiItalic = localFont({
   src: "./fonts/satoshi-italic.ttf",
-  variable: "--font-satoshi-italic",
+  variable: "--satoshi-italic",
   weight: "400",
   style: "italic",
 });
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     url: "https://www.adam-gordon.info",
     countryName: "United States",
     locale: "en_US",
-    images: ["@/public/portrait.png"],
+    images: ["./public/portrait.png"],
   },
 };
 
@@ -83,7 +83,8 @@ export default function RootLayout({
               {" "}
               <Header />
               {children}
-              <ThemeSwitch /> <Footer />
+              <ThemeSwitch />
+              <Footer />
             </div>
             <Toaster position="top-right" />
           </ThemeContextProvider>
