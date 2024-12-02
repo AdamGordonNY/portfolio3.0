@@ -18,6 +18,11 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["Satoshi", "sans-serif"],
+        serif: ["Merriweather", "serif"],
+        mono: ["JetBrains Mono", "monospace"],
+      },
       backgroundImage: {
         "landing-pattern": "url('/backdrop.svg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -243,7 +243,7 @@ export const projectList: CaseStudy[] = [
     subtitle: "Where Developers Connect",
     description:
       "A social media platform for developers to share their knowledge, organize meetups, and share audio content. Made with NextJS 14, TailwindCSS, and Prisma as the primary technologies.",
-    cardImage: "images/devtodayslanted.svg",
+    cardImage: "/images/devtodayslanted.svg",
     images: ["/images/devtoday-wide.svg", "/images/devtoday.svg"],
     tech: [
       "nextjs",
